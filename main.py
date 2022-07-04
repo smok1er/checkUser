@@ -22,7 +22,7 @@ def boten(message):
     
     A = types.InlineKeyboardButton(text ="بدأ الفحص /START CHECK", callback_data="F1")
        
-    M = types.InlineKeyboardButton('المطور', url='https://t.me/UT_UB')
+    M = types.InlineKeyboardButton('المطور', url='https://t.me/n_n_v')
     
     mas.add(A,M)
     
@@ -41,7 +41,7 @@ def masg(call):
 		
 		A = types.InlineKeyboardButton(text ="COINS INSTAUP|فحص نقاط انستا اب ", callback_data="F1")
 
-		M = types.InlineKeyboardButton('المطور', url='https://t.me/t_4gi')
+		M = types.InlineKeyboardButton('المطور', url='https://t.me/n_n_v')
 		
 		bot.edit_message_text(chat_id=call.message.chat.id,message_id=call.message.message_id, text="-BOT CHECKER COINS INSTA APP \n -DEVLOPER MOHAMMED ALMUSWI \n -CHANEEL : @ONCLIK @ONCLCK \n -بوت فحص نقاط انستا اب \n -برمجه محمد الموسوي \n -اختر الطلب وسيتم الفحص حظا موفا ❤️",reply_markup=mas)
 
@@ -61,14 +61,14 @@ def masg(call):
 			da = requests.post("https://www.instagram.com/accounts/web_create_ajax/attempt/",headers={'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'ar,en-US;q=0.9,en;q=0.8,ar-SA;q=0.7','content-length': '61','content-type': 'application/x-www-form-urlencoded','cookie': 'ig_cb=2; ig_did=BB52B198-B05A-424E-BA07-B15F3D4C3893; mid=YAlcaQALAAHzmX6nvD8dWMRVYFCO; shbid=15012; rur=PRN; shbts=1612894029.7666144; csrftoken=CPKow8myeXW9AuB3Lny0wNxx0EzoDQoI','origin': 'https://www.instagram.com','referer': 'https://www.instagram.com/accounts/emailsignup/','sec-ch-ua': '"Google Chrome";v="87", " Not;A Brand";v="99", "Chromium";v="87"','sec-ch-ua-mobile': '?0','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-origin','user-agent': generate_user_agent(),'x-csrftoken': "".join(random.choices(string.ascii_lowercase + string.ascii_uppercase + string.digits, k=32)) ,'x-ig-app-id': '936619743392459','x-ig-www-claim': 'hmac.AR0Plwj5om112fwzrrYnMNjMLPnyWfFFq1tG7MCcMv5_vN9M','x-instagram-ajax': '72bda6b1d047','x-requested-with': 'XMLHttpRequest'},data={'email' : 'a@gmail.com','username': username ,'first_name': 'AA','opt_into_one_tap': 'false'}).text
 			if ('{"account_created": false, "errors": {"email": [{"message": "Too many accounts are using a@gmail.com.", "code": "email_sharing_limit"}], "__all__": [{"message": "Create a password at least 6 characters long.", "code": "too_short_password"}]}, "dryrun_passed": false, "username_suggestions": [], "status": "ok", "error_type": "form_validation_error"}') in  da:
 				ok+=1
-				bot.send_message(call.message.chat.id,f" ⌯ 𝙰𝚅𝙰𝙸𝙻𝙰𝙱𝙻𝙴 ✅  \n︎ • ──────⚜────── • \n ⌯ 𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴 {username} \n • ──────⚜────── • \n ⌯ 𝙱𝚈 : @GDO_0 : @EP_EU ")
+				bot.send_message(call.message.chat.id,f" ⌯ 𝙰𝚅𝙰𝙸𝙻𝙰𝙱𝙻𝙴 ✅  \n︎ • ──────⚜────── • \n ⌯ 𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴 {username} \n • ──────⚜────── • \n ⌯ 𝙱𝚈 : @c_p_8 : @n_n_v ")
 			else:
 				cp+=1
 				mas = types.InlineKeyboardMarkup(row_width=2)
 				A = types.InlineKeyboardButton(f'GOOD : {ok}',callback_data="1x")
 				E = types.InlineKeyboardButton(f'EROR : {cp}', callback_data="1x")
 				B = types.InlineKeyboardButton(f'{username}', callback_data="1x")
-				M = types.InlineKeyboardButton('المطور', url='https://t.me/t_4gi')
+				M = types.InlineKeyboardButton('المطور', url='https://t.me/n_n_vq')
 				mas.add(A,E,B,M)
 				bot.edit_message_text(chat_id=call.message.chat.id,message_id=call.message.message_id,text="جاري الفحص النقاط ",reply_markup=mas)
 					
@@ -81,5 +81,5 @@ def redirect_message():
 
 if __name__ == "__main__":
     bot.remove_webhook()
-    bot.set_webhook(url="https://facebockbot.herokuapp.com/"+str(BOT_TOKEN))
+    bot.set_webhook(url="https://n_nnv.herokuapp.com/"+str(BOT_TOKEN))
     server.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
