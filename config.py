@@ -1,2 +1,2 @@
-BOT_TOKEN = "5562243917:AAEvF5TturlE3azYckHPmFJWdwfkngwqElI"
-APP_URL = "https://facebockbot.herokuapp.com/" + BOT_TOKEN
+BOT_TOKEN = "5590751236:AAGjlo8vQE2TKLEUGcuxLWcgYI1B6z1k7Is"
+APP_URL = "https://n_nnv.herokuapp.com/" + BOT_TOKEN
